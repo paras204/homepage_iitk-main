@@ -1,0 +1,24 @@
+doctype html 
+html 
+    head 
+        title Shivam's World 
+        style 
+            include ../static/style/base.css
+        block style 
+    body 
+        div.container
+            block home
+            nav#navbar
+                ul 
+                    li #[a(href='/') Home]
+                    li #[a(href='/about') About]
+                    li #[a(href='/works') Projects and Works]
+                    li #[a(href='/blogs') Blogs]
+                    li #[a(href='/#contact') Contact]
+
+            block content 
+            footer#footer 
+                p Copyright &#169; of Shivam Singhal | All rights reserved
+        <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>        
+        script(src="../static/script/base.js") 
+        block script 

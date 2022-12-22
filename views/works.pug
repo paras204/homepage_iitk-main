@@ -1,0 +1,99 @@
+extends base.pug
+
+block script 
+    script(src="../static/script/works.js") 
+
+block style 
+    style 
+        include ../static/style/works.css
+
+block content
+    section#projects 
+        h2.section_heading Projects
+        //- p.section_description Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab consectetur, ratione labore, alias, quod aperiam nemo saepe quos fugit vero itaque! Nostrum adipisci autem rem libero illo rerum consectetur voluptatibus, iusto a.
+        div.cards
+            div.card#cv
+                <button type="button" class="collapsible">Computer Vision - Stamatics </button>
+                div.content
+                    //- h3 Computer Vision - Stamatics 
+                    div.card-box
+                        //- div.card-img 
+                            img(src="../static/images/card_1_history.jpg", alt="Time flies;p")
+                        div.card-content
+                            p This was an introductory project covering all aspects on CV from it's history to modern DL based approaches. I did this project in my 2nd sem. The project covered basics like resizing, cropping, rotating an image and further, applying filters in an image to obtain its various properties, use of Canny edge detector for detecting edges, hog filters for finding similar patterns, using hog and parts based approach for detecting an image and finally use of DL and CNN to detect numbers in an image. <br>We finally did a group project on face recognition system using MTCNN.<br><br>This was the project which introduced me to the world of CV, which I am always enthusiastic to explore!!
+            div.card#yolo
+                <button type="button" class="collapsible">YoloV4 and ROS integration - AUV</button>
+                div.content
+                    //- h3 YoloV4 and ROS integration - AUV
+                    div.card-box
+                        //- div.card-img 
+                            //- img(src="../static/images/card_2_hobbies.jpg", alt="time pass stuff;p")
+                        div.card-content 
+                            p Well I'm currently working on this project under Team AUV-IITK. We had to make a custom dataset of underwater images in YoloV4 format and train the YoloV4 model on this dataset. The major focus of the project is to integrate YoloV4 with ROS to implement it in our new AUV. Till now we had been using YoloV3 which gave pretty good results but wh not better!! After examining the speed and accuracy of YoloV4, we started working on this project and might soon find our way.<br><br> For those who don't know the acronyms,<br>Yolo: You Only Look Once<br>ROS: Robot Operating System<br>AUV: Autonomous Underwater Vehicle.
+            div.card#web_dev
+                <button type="button" class="collapsible">Web Development</button>
+                div.content
+                    //- h3 WEB DEV 
+                    div.card-box
+                        //- div.card-img 
+                            //- img(src="../static/images/card_3_achievements.jpg", alt="time pass stuff;p")
+                        div.card-content
+                            p I started learning web dev around the near end of my 2nd sem in June,2021. This project was not under any official organisation but I learned this from a YT playlist by @codewithharry. The course was divided into learning HTML, CSS and JS for web dev, using node.js for backend and Express as the framework, and further storing data from website into a database (MongoDB in our case) and last of all hosting the site.<br><br> This website could be considered the end-project of the course ;p
+    section#clubs_and_teams
+        h2.section_heading TEAMS
+        //- p.section_description Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab consectetur, ratione labore, alias, quod aperiam nemo saepe quos fugit vero itaque! Nostrum adipisci autem rem libero illo rerum consectetur voluptatibus, iusto a.
+        div.cards
+            div.card#auv
+                <button type="button" class="collapsible">Member of Software Subsystem - AUV</button>
+                div.content
+                    //- h3 Member of Software Subsystem - AUV
+                    div.card-box
+                        //- div.card-img 
+                            //- img(src="../static/images/card_1_history.jpg", alt="Time flies;p")
+                        div.card-content
+                            p AUV is a team under SnT Council IITK. It is a group of Undergrads working together to build AUV and participate in various national and international competitions. We work on improvising our AUV by implementing various robotic tools and research papers, and running tests to test the results of the implementations. <br><br>Well for me, it is one of the coolest thing one can do in IITK.<br><br> 
+                                a(href="https://auv.sntiitk.in/#/landing-page", target="_blank") Click here to visit AUV-IITK website.
+            //- div.card#eclub
+            //-     <button type="button" class="collapsible">Secretary E-Club</button>
+            //-     div.content
+            //-         h3 Secretary E-Club
+            //-         div.card-box
+            //-             //- div.card-img 
+            //-                 //- img(src="../static/images/card_2_hobbies.jpg", alt="time pass stuff;p")
+            //-             div.card-content 
+            //-                 p E-club, one of the oldest clubs under SnT Council, IITK, aims at developing 
+    section#websites
+        h2.section_heading Website
+        //- p.section_description Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab consectetur, ratione labore, alias, quod aperiam nemo saepe quos fugit vero itaque! Nostrum adipisci autem rem libero illo rerum consectetur voluptatibus, iusto a.
+        div.cards
+            div.card#website
+                <button type="button" class="collapsible">The one you are surfing ;p</button>
+                div.content
+                    //- h3 The one you are surfing ;p
+                    div.card-box
+                        //- div.card-img 
+                            //- img(src="../static/images/card_1_history.jpg", alt="Time flies;p")
+                        div.card-content
+                            p This website was created in the end-sem vacations of my 3rd sem in Dec, 2021. I made this website from scratch in a one-week timeframe(had other stuff to do:0).<br><br> I used 'Express' for the framework of the site, and 'Pug' and 'CSS' for writing the basic structure and designing respectively.
+    section#volunteer 
+        h2.section_heading Volunteering
+        //- p.section_description Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab consectetur, ratione labore, alias, quod aperiam nemo saepe quos fugit vero itaque! Nostrum adipisci autem rem libero illo rerum consectetur voluptatibus, iusto a.
+        div.cards
+            div.card#sg
+                <button type="button" class="collapsible">Student Guide - CS IITK</button>
+                div.content
+                    //- h3 Student Guide - CS IITK
+                    div.card-box
+                        //- div.card-img 
+                            //- img(src="../static/images/card_1_history.jpg", alt="Time flies;p")
+                        div.card-content
+                            p I am an SG (Student Guide) at CS (Counselling Service) IITK. I along with my fellow SGs voluteered to help UG-Y21 batch with their registration process and Orientation for their first academic year at IITK.<br> <br> Well there is always more to to the definition of this role, but this should suffice for now.
+            div.card#am
+                <button type="button" class="collapsible">Academic Mentor ESC101A - CS IITK</button>
+                div.content
+                    //- h3 Academic Mentor ESC101A - CS IITK
+                    div.card-box
+                        //- div.card-img 
+                            //- img(src="../static/images/card_2_hobbies.jpg", alt="time pass stuff;p")
+                        div.card-content 
+                            p I am an AM (Academic Mentor) for ESC101A(Fundamentals of Computing) for UG-Y21 at CS,IITK. Being an AM, I help peeps of Y21 batch with questions related to ESC101, which could be anything from general guidance on how to score good in the subject to helping them in debugging error or explaining the in what way to proceed in a question, they feel unsolvable.

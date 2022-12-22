@@ -1,0 +1,65 @@
+extends base.pug
+
+block script 
+    script(src="../static/script/home.js") 
+    <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+
+block style 
+    style 
+        include ../static/style/about.css
+        include ../static/style/home.css
+
+//- block home 
+//-     div#home
+//-         h1 Find me if you can..
+//-         <button onclick="document.location='#navbar'" id ="move_ahead">Explore...</button>
+
+block content
+    section#about
+        div.section_image 
+            img(src="../static/images/about.png", alt="")
+        div.section_content
+            h2.section_heading About Me 
+            p.section_description Hey there folks!!<br> I am Sophomore Undergrad at IITK in Department of Electrical Enginnering. <br><br> You will find me quite shy, introvert and disciplined at the first meet, but once we start meeting more frequently, I might appear to be the most humorous person you would ever find!! (that's what she said :') )<br><br>
+            <button onclick="document.location='/about'" class="know_more">Know more...</button>
+    section#works 
+        div.section_content
+            h2.section_heading Projects and Works 
+            p.section_description In the past year, I have gained much of interest in Science and Tech fields, and did some projects and widened my knowledge in the areas of Deep Learning, CNN, Robotics, Vision and much more. I also participate in CP contests from time to time, to work on my problem solving skills.
+            <button onclick="document.location='/works'" class="know_more">Know more...</button>
+        div.section_image 
+            img(src="../static/images/works.png", alt="")
+    section#blogs
+        div.section_image 
+            img(src="../static/images/blogs.jpg", alt="")
+        div.section_content
+            h2.section_heading Blogs
+            p.section_description **Ek accha sa quote**<br> Well I encounter many interesting things daily, which make me sometimes wonder what a man is capable of doing!! Might write something interesting on something inspiring sometime.<br> <br>Warning: Don't click the Read more button!!
+            <button onclick="document.location='/blogs'" class="know_more">Read more...</button>
+    section#contact 
+        div.section_content
+            h2.section_heading Contact 
+            p.section_description Pick any social media platform of your choice and drop a message, a 'Hi there!' message will soon flash on your screen:)
+            div.social_sites
+                ul 
+                    a(href="https://www.facebook.com/singhals163/", target="_blank", id="facebook")  
+                        img(src="../static/images/facebook.png", alt="") 
+                    a(href="https://www.instagram.com/singhalshivam_16/", target="_blank", id="instagram")  
+                        img(src="../static/images/instagram.png", alt="") 
+                    a(href="https://www.linkedin.com/in/singhals163/", target="_blank", id="linkedin")  
+                        img(src="../static/images/linkedin.png", alt="") 
+                    a(href="https://twitter.com/singhals163", target="_blank", id="twitter")  
+                        img(src="../static/images/twitter.png", alt="") 
+                    a(href="https://github.com/singhals163", target="_blank", id="github")  
+                        img(src="../static/images/github.png", alt="") 
+                    a(href="https://www.codechef.com/users/singhals163", target="_blank", id="codechef")  
+                        <span class="iconify" data-icon="simple-icons:codechef" style="color: #328496;" data-width="128" data-height="128"></span>
+                    a(href="https://codeforces.com/profile/singhals163", target="_blank", id="codeforces")  
+                        <span class="iconify" data-icon="simple-icons:codeforces" style="color: #328496;" data-width="40" data-height="40"></span>
+            a(href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCKHRtbBZbhnxpPtJXmTcCVdrGqZstWJrpphZwFBwtRwxVbFzBWnLBjWBPzskWsMTfVrJZFg", target="_blank", class="email") 
+                img(src="../static/images/email_icon.png", alt="") 
+                p shivamsinghal16032003@gmail.com 
+
+        div.section_image 
+            img(src="../static/images/contact.png", alt="")
+

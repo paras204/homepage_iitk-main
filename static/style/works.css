@@ -1,0 +1,169 @@
+section{
+    padding: 40px 0px 0px;
+}
+
+.section_heading{
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.section_description{
+    text-align: center;
+    padding: 15px 20%;
+}
+
+.cards{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 0px;
+}
+
+.card{
+    /* border: 2px solid black; */
+    border-radius: 6px;
+    /* background-color: #b94e1a17; */
+    width: 65vw;
+    margin: 7px 15px;
+    height: 100%;
+    position: relative;
+    box-shadow: 0px 0px 7px 3px black;
+    border-radius: 3px;
+}
+
+.collapsible{
+    width: 65vw;
+    color: black;
+    /* background-color: grey; */
+    border: none;
+    outline: none;
+    min-height: 50px;
+    border-radius: 3px;
+}
+
+.active, .collapsible:hover {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+}
+.active{
+    border-radius: 3px 3px 0px 0px;
+    text-align: center;
+    font-size: 1.7rem;
+    padding: 30px 0px;
+    font-weight: bold;
+}
+
+.content{
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.content::before{
+    content: "";
+    opacity: 0.9;
+    background-color: black;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.card h3{
+    text-align: center;
+    font-size: 1.7rem;
+    padding-top: 65px;
+    padding-bottom: 0px;
+    
+}
+
+.card-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px 0px 60px;
+}
+
+.card-img{
+    height: 80px;
+    align-items: center;
+}
+
+.card-img img{
+    height: 100%;
+    align-self: center;
+}
+
+.card-content{
+    padding: 20px 20px 3px;
+    width: 80%;
+}
+
+.card-content p, .card-content a{
+    font-size: 1rem;
+    text-align: center;
+    font-family: 'Electrolize', sans-serif;
+}
+
+#sg .card-content p, #am .card-content p{
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+
+.card-content a{
+    color: white;
+    text-decoration-style: dotted;
+}
+
+.card-content a:hover{
+    color: #00c9ff;
+}
+
+@media screen and (max-width: 950px) {
+    .collapsible{
+        width: 80vw;
+        font-size: 0.9rem;
+        font-weight: 400;
+    }
+    .card{
+        width: 80vw;
+    }
+    .card-content p, .card-content a{
+        font-size: 0.8rem;
+    }
+    .active{
+        font-size: 1.4rem;
+        padding: 20px 0px;
+    }
+}
+/* background images of cards */
+#cv .content::before{
+    background: url('../images/computer_vision.jpg') no-repeat center center/cover;
+}
+#yolo .content::before{
+    background: url('../images/yolo.jpg') no-repeat center center/cover;
+}
+#web_dev .content::before{
+    background: url('../images/web_dev.jpg') no-repeat center center/cover;
+}
+#auv .content::before{
+    background: url('../images/auv.jpg') no-repeat center center/cover;
+}
+#eclub .content::before{
+    background: url('../images/eclub.jpg') no-repeat center center/cover;
+}
+#website .content::before{
+    background: url('../images/image_1.png') no-repeat center center/cover;
+}
+#sg .content::before{
+    background: url('../images/sg.jpg') no-repeat center center/cover;
+}
+#am .content::before{
+    background: url('../images/am.jpeg') no-repeat center center/cover;
+}
